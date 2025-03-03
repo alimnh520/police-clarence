@@ -4,7 +4,7 @@ import Footer from './layout/Footer'
 
 const ChildCom = ({children}) => {
     return (
-        <div className="">
+        <div className="mt-32">
             <Header/>
             {children}
             <Footer/>

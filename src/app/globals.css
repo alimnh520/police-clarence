@@ -29,6 +29,11 @@ body {
 }
 
 @media (max-width: 768px) {
+  .footer{
+    width: 900px;
+    text-align: center;
+  }
+
   .main-contain{
     width: 900px;
   }
