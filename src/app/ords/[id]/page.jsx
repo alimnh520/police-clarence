@@ -15,11 +15,11 @@ const page = () => {
 
     useEffect(() => {
         if (window.location.href === "https://pcc.police.gov.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH") {
-            window.location.href = "https://pcc.police.gov.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH"
+            window.location.href = "https://pcc.police.gov.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH";
         }
-    }, [])
-
+    }, []);
     const handlePrint = useReactToPrint({ contentRef });
+
     return (
         <div className='w-full h-auto flex flex-col bg-[#e3e2e0] relative mt-32 pb-[70px] main-contain'>
 
@@ -31,13 +31,15 @@ const page = () => {
 
             <div className='w-[725px] self-center mt-4 flex flex-col items-center justify-start' ref={contentRef}>
                 <img src='/bangladesh_govt_logo.png' className='h-[124px]' />
-                <p className='text-[#393938] text-[27px] font-bold text-center mt-5 leading-[26px]'>GOVERNMENT OF THE PEOPLE'S REPUBLIC OF <br />
+                <p className='text-[#393839] text-[27px] font-bold text-center mt-5 leading-[26px]'>GOVERNMENT OF THE PEOPLE'S REPUBLIC OF <br />
                     BANGLADESH</p>
 
                 <div className='w-full h-40 flex justify-between items-start mt-3'>
                     <div className="h-full flex flex-col items-center justify-center">
-                        <div className="h-36 w-32 bg-white flex items-center justify-center">
-                            <QRCodeCanvas value="https://pcc.police.gov.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH" size="105" />
+                        <div className="w-[130px] h-36 bg-white flex items-center justify-center relative p-3">
+                            <div className="w-full h-full">
+                                <QRCodeCanvas value="https://pcc.police.gov.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH" size="100" className="w-full h-full" />
+                            </div>
                         </div>
                         <p className="mt-1">Ref No. 1CHABXH</p>
                     </div>
@@ -45,14 +47,14 @@ const page = () => {
                         <p>Adamdighi Police Station</p>
                         <p>Bogura</p>
                     </div>
-                    <p className="self-end">Dated: 02-FEB-2025</p>
+                    <p className="self-end">Dated: 20-FEB-2025</p>
                 </div>
                 <div className="w-fit mt-4 flex flex-col items-center justify-start">
                     <p className="text-[#393938] text-[24px] font-bold">POLICE CLEARANCE CERTIFICATE</p>
 
-                    <p className="leading-7 text-lg font-normal mt-10 text-justify break-words">The character and antecedents of Mr. <span className="text-[#393938] font-bold">MD JAKIR HOSSAIN</span> Son of <span className="text-[#393938] font-bold">MD SARAPAT ALI</span> Village/ Area: <span className="text-[#393938] font-bold">BIHIGRAM</span>, P/O: <span className="text-[#393938] font-bold">BIHIGRAM</span>, Post Code: <span className="text-[#393938] font-bold">5890</span>, P/S: <span className="text-[#393938] font-bold">Adamdighi</span>, District: <span className="text-[#393938] font-bold">Bogura</span> holder of Bangladesh International Passport No. <span className="text-[#393938] font-bold">A15807934</span> Issued at <span className="text-[#393938] font-bold">DIP/DHAKA</span> on <span className="text-[#393938] font-bold">03 MAR 1980</span> have been verified and there is no adverse information against him/her on record.</p>
+                    <p className="leading-7 text-lg font-normal mt-10 text-justify break-words">The character and antecedents of Mr. <span className="text-[#393938] font-bold">MD ZAKIR HOSSAIN</span> Son of <span className="text-[#393938] font-bold">MD SARAPAT ALI</span> Village/ Area: <span className="text-[#393938] font-bold">BIHIGRAM</span>, P/O: <span className="text-[#393938] font-bold">BIHIGRAM</span>, Post Code: <span className="text-[#393938] font-bold">5890</span>, P/S: <span className="text-[#393938] font-bold">Adamdighi</span>, District: <span className="text-[#393938] font-bold">Bogura</span> holder of Bangladesh International Passport No. <span className="text-[#393938] font-bold">A15807934</span> Issued at <span className="text-[#393938] font-bold">DIP/DHAKA</span> on <span className="text-[#393938] font-bold">24 FEB 2025</span> have been verified and there is no adverse information against him/her on record.</p>
 
-                    <p className="mt-10 text-lg">This certificate is issued in pursuance of Ministry of Home Affairs Memo No. Nirdesh-2/75-Pt. 2152-Bohi(1), dated the 19th May, 1977.</p>
+                    <p className="mt-10 text-lg">This certificate is issued in pursuance of Ministry of Home Affairs Memo No. Nirdesh-2/75-Pt. 2152-Bohi(1), dated the 03th Mar, 1980.</p>
 
                     <div className="w-full mt-10 flex items-center justify-between">
                         <p className="">Superintendent of Police <br /> District Special Branch Bogura</p>

@@ -9,7 +9,7 @@ const page = () => {
     }
   }, []);
   return (
-    <div className='w-full h-40 flex items-center justify-center mt-32'>
+    <div className='w-full h-40 flex items-center justify-center mt-32 overflow-x-hidden'>
       <Link href="/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH" className='px-4 py-1 bg-blue-600 text-white rounded-md'>Go to see</Link>
     </div>
   )

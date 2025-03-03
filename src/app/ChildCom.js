@@ -4,7 +4,7 @@ import Footer from './layout/Footer'
 
 const ChildCom = ({children}) => {
     return (
-        <div className="bg-[url('/body_bg.png')] bg-fixed cursor-pointer">
+        <div className="">
             <Header/>
             {children}
             <Footer/>
