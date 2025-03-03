@@ -5,7 +5,7 @@ import React, { useEffect, useRef } from 'react'
 import { IoIosArrowUp } from "react-icons/io";
 import { useReactToPrint } from "react-to-print";
 
-const page = () => {
+const NewPage = () => {
 
     const topView = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -72,4 +72,4 @@ const page = () => {
     )
 }
 
-export default page
+export default NewPage
