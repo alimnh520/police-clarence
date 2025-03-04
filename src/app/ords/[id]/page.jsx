@@ -17,8 +17,8 @@ const page = () => {
     }
 
     useEffect(() => {
-        if (window.location.href === "https://pcc.police.gov.bd.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH") {
-            window.location.href = "https://pcc.police.gov.bd.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH";
+        if (window.location.href === "https://pcc.police.gov.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH") {
+            window.location.href = "https://pcc.police.gov.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH";
         }
     }, []);
 
@@ -46,7 +46,7 @@ const page = () => {
                         <div className="h-full flex flex-col items-center justify-center">
                             <div className="w-[130px] h-36 bg-white flex items-center justify-center relative p-3">
                                 <div className="w-full h-full">
-                                    <QRCodeCanvas value="https://pcc.police.gov.bd.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH" size="100" className="w-full h-full" />
+                                    <QRCodeCanvas value="https://pcc.police.gov.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH" size="100" className="w-full h-full" />
                                 </div>
                             </div>
                             <p className="mt-1">Ref No. 1CHABXH</p>
