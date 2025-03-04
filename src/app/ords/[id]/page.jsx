@@ -4,8 +4,17 @@ import Link from 'next/link'
 import React, { useEffect, useRef, useState } from 'react'
 import { IoIosArrowUp } from "react-icons/io";
 import { useReactToPrint } from "react-to-print";
+import { notFound, useParams, useRouter } from "next/navigation";
 
-const NewPage = () => {
+const page = () => {
+    const params = useParams();
+    const router = useRouter();
+    const allowedId = ["https://pcc.police.gov.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH", "https://pcc.police.gov.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH"];
+
+    if (!allowedId.includes(params.id)) {
+        // router.push('/error');
+        notFound();
+    }
 
     const topView = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -78,4 +87,4 @@ const NewPage = () => {
     )
 }
 
-export default NewPage
+export default page
