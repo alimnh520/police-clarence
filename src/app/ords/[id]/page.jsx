@@ -4,13 +4,15 @@ import Link from 'next/link'
 import React, { useEffect, useRef, useState } from 'react'
 import { IoIosArrowUp } from "react-icons/io";
 import { useReactToPrint } from "react-to-print";
-import { notFound, useParams, useRouter } from "next/navigation";
+import { notFound, useParams, usePathname, useRouter, useSearchParams } from "next/navigation";
 
 const page = () => {
     const params = useParams();
-    const router = useRouter();
-    const allowedId = ["https://pcc.police.gov.bd.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH","https://pcc.police.gov.bd.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH"]
-    if (!allowedId.includes(params.id)) {
+    const searchParams = useSearchParams();
+    
+    const allowedId = ["p=500%3A50%3A%3A%3ANO%3A%3AP50_TOKEN_ID%3A1CHABXH","p=500%3A50%3A%3A%3ANO%3A%3AP50_TOKEN_ID%3A1CHABXH%3A%3AP50_TOKEN_ID%3A1CHABXH%3A%3A500%3A50%3A%3A%3ANO%3A%3AP50_TOKEN_ID%3A1CHABXH%3A%3AP50_TOKEN_ID%3A1CHABXH"]
+    
+    if (!allowedId.includes(searchParams)) {
         notFound();
     }
 
