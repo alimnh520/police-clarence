@@ -7,20 +7,14 @@ import { useReactToPrint } from "react-to-print";
 import { notFound, useParams, usePathname, useRouter, useSearchParams } from "next/navigation";
 
 const page = () => {
-    const params = useParams();
+    const contentRef = useRef();
     const searchParams = useSearchParams();
-    
+
     const allowedId = ["p=500%3A50%3A%3A%3ANO%3A%3AP50_TOKEN_ID%3A1CHABXH","p=500%3A50%3A%3A%3ANO%3A%3AP50_TOKEN_ID%3A1CHABXH%3A%3AP50_TOKEN_ID%3A1CHABXH%3A%3A500%3A50%3A%3A%3ANO%3A%3AP50_TOKEN_ID%3A1CHABXH%3A%3AP50_TOKEN_ID%3A1CHABXH"]
-    
-    if (!allowedId.includes(searchParams)) {
-        notFound();
-    }
 
     const topView = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
-
-    const contentRef = useRef();
 
     useEffect(() => {
         if (window.location.href === "https://pcc.police.gov.bd.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH") {
@@ -29,6 +23,10 @@ const page = () => {
     }, []);
 
     const handlePrint = useReactToPrint({ contentRef });
+
+    if (!allowedId.includes(searchParams.toString())) {
+        notFound();
+    }
 
     return (
         <div className={`w-full h-auto flex flex-col bg-[#e3e2e0] relative pb-[70px] main-contain`}>
