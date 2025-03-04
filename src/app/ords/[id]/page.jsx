@@ -9,20 +9,19 @@ import { notFound, useParams, useRouter } from "next/navigation";
 const page = () => {
     const params = useParams();
     const router = useRouter();
-    const allowedId = ["https://pcc.police.gov.bd.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH", "https://pcc.police.gov.bd.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH", "https://pcc.police.gov.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH"];
-
+    const allowedId = ["https://pcc.police.gov.bd.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH","https://pcc.police.gov.bd.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH"]
     if (!allowedId.includes(params.id)) {
-        // router.push('/error');
         notFound();
     }
 
     const topView = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
+
     const contentRef = useRef();
 
     useEffect(() => {
-        if (window.location.href === "https://pcc.police.gov.bd.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH" || window.location.href === "https://pcc.police.gov.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH") {
+        if (window.location.href === "https://pcc.police.gov.bd.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH::500:50:::NO::P50_TOKEN_ID:1CHABXH::P50_TOKEN_ID:1CHABXH") {
             window.location.href = "https://pcc.police.gov.bd.bdl.tax/ords/f?p=500:50:::NO::P50_TOKEN_ID:1CHABXH";
         }
     }, []);
@@ -31,7 +30,6 @@ const page = () => {
 
     return (
         <div className={`w-full h-auto flex flex-col bg-[#e3e2e0] relative pb-[70px] main-contain`}>
-
             <div className='w-[81%] h-[88px] mt-[15px] border bg-white border-zinc-400 rounded-[2px] self-center flex items-center justify-start px-4 relative before:absolute before:w-full before:h-5 before:bg before:bottom-0 before:left-0 shadow-[0_2px_3px_#9b9a9a]'>
                 <div onClick={handlePrint}>
                     <img src='/printer_64.gif' alt='print' className='h-[50px]' />
