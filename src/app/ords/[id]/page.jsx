@@ -62,7 +62,7 @@ const page = () => {
 
                         <p className="leading-7 text-lg font-normal mt-10 text-justify break-words">The character and antecedents of Mr. <span className="text-black font-bold">MD ZAKIR HOSSAIN</span> Son of <span className="text-black font-bold">MD SARAPAT ALI</span> Village/ Area: <span className="text-black font-bold">BIHIGRAM</span>, P/O: <span className="text-black font-bold">BIHIGRAM</span>, Post Code: <span className="text-black font-bold">5890</span>, P/S: <span className="text-black font-bold">Adamdighi</span>, District: <span className="text-black font-bold">Bogura</span> holder of Bangladesh International Passport No. <span className="text-black font-bold">A15807934</span> Issued at <span className="text-black font-bold">DIP/DHAKA</span> on <span className="text-black font-bold">24 MAY 2024</span> have been verified and there is no adverse information against him/her on record.</p>
 
-                        <p className="mt-10 text-lg">This certificate is issued in pursuance of Ministry of Home Affairs Memo No. Nirdesh-2/75-Pt. 2152-Bohi(1), dated the 03th Mar, 1980.</p>
+                        <p className="mt-10 text-lg">This certificate is issued in pursuance of Ministry of Home Affairs Memo No. Nirdesh-2/75-Pt. 2152-Bohi(1), dated the 19th May, 1977.</p>
 
                         <div className="w-full mt-10 flex items-center justify-between">
                             <p className="">Superintendent of Police <br /> District Special Branch Bogura</p>
