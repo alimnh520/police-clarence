@@ -30,17 +30,16 @@ const page = () => {
 
     return (
         <div className={`w-full h-auto flex flex-col text-black bg-[#e3e2e0] relative pb-[70px] main-contain`}>
-            <div className='w-[81%] h-[88px] mt-[15px] border bg-white border-zinc-400 rounded-[2px] self-center flex items-center justify-start px-4 relative before:absolute before:w-full before:h-5 before:bg before:bottom-0 before:left-0 shadow-[0_2px_3px_#9b9a9a]'>
+            <div className='w-[81%] h-[88px] mt-[15px] border bg-white border-zinc-400 rounded-[2px] self-center flex items-center justify-start px-4 relative before:absolute before:w-full before:h-5 before:bg before:bottom-0 before:left-0 shadow-[0_2px_3px_#9b9a9a] print'>
                 <div onClick={handlePrint}>
                     <img src='/printer_64.gif' alt='print' className='h-[50px]' />
                 </div>
             </div>
 
             <div className="w-full flex justify-center" ref={contentRef}>
-                <div className='w-[725px] self-center mt-4 flex flex-col items-center justify-start mr-5'>
+                <div className='w-[725px] self-center mt-4 flex flex-col items-center justify-start mr-5 body'>
                     <img src='/bangladesh_govt_logo.png' className='h-[124px]' />
-                    <p className='text-[27px] font-bold text-center mt-5 leading-[26px]'>GOVERNMENT OF THE PEOPLE'S REPUBLIC OF <br />
-                        BANGLADESH</p>
+                    <p className='text-[27px] font-bold text-center mt-5 leading-[26px] whitespace'>GOVERNMENT OF THE PEOPLE'S REPUBLIC OF BANGLADESH</p>
 
                     <div className='w-full h-40 flex justify-between items-start mt-3'>
                         <div className="h-full flex flex-col items-center justify-center">
@@ -74,7 +73,7 @@ const page = () => {
                     </div>
                 </div>
             </div>
-            <button className="size-20 self-center mt-12 relative hover:-top-[14px] transition-all duration-100 flex items-center justify-center hover:shadow-[0_2px_3px_#c8c7c5] top-0 rounded-full border bg-white border-[#c8c7c2b2] text-4xl text-gray-200 cursor-pointer" onClick={topView}>
+            <button className="size-20 self-center mt-12 relative hover:-top-[14px] transition-all duration-100 flex items-center justify-center hover:shadow-[0_2px_3px_#c8c7c5] top-0 rounded-full border bg-white border-[#c8c7c2b2] text-4xl text-gray-200 circle cursor-pointer" onClick={topView}>
                 <IoIosArrowUp />
             </button>
         </div>

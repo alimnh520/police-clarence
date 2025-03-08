@@ -21,7 +21,7 @@ body {
   background-image: url("/body_bg.png");
   background-size: cover;
   background-position: center;
-  font-family: "SolaimanLipi",Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "SolaimanLipi", Helvetica Neue, Helvetica, Arial, sans-serif;
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
@@ -30,12 +30,40 @@ body {
 }
 
 @media (max-width: 768px) {
-  .footer{
-    width: 900px;
+  .footer {
+    margin-top: 7px;
+    font-size: 13px;
     text-align: center;
   }
+  .link {
+    padding: 0 5px;
+    font-size: 16.5px;
+  }
 
-  .main-contain{
-    width: 900px;
+  .whitespace {
+    font-size: 23px;
+    width: 98%;
+  }
+  .logo {
+    height: 68px;
+  }
+  .overflow-x-hidden {
+    margin-top: 117px;
+  }
+
+  .circle{
+    align-self: flex-start;
+    left: 25%;
+    transform: translateX(-25%);
+  }
+  .print{
+    width: 55%;
+    align-self: flex-start;
+  }
+
+  .main-contain {
+    width: 630px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
